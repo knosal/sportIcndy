@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "proxima";
+  src: url("../fonts/proximanova-light-webfont.woff2") format("woff2"), url("../fonts/proximanova-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima_novabold";
+  src: url("../fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima_novasemibold";
+  src: url("../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+*,
+*::bofore,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  overflow-wrap: break-word;
+  font-family: "proxima", "Arial", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.header {
+  max-width: 100%;
+  min-width: 320px;
+}
+
+.header-wrapper {
+  margin: 0 auto;
+  max-width: 1500px;
+  min-width: 290px;
+  padding: 0 15px;
+  padding-bottom: 70px;
+}
+
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+/*-----------------------ШАПКА-----------------------*/
+.header {
+  background-image: url("../img/header-background.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.logo {
+  width: 224px;
+}
+
+.logo-link {
+  display: block;
+}
+
+.logo-image {
+  display: block;
+  max-width: 100%;
+}
+
+.navigation {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.navigation_list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__item {
+  margin-right: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 6.3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.header_item_link {
+  transition-property: color;
+  transition-duration: 500ms;
+  outline: #4556f8;
+  cursor: pointer;
+}
+.header_item_link:hover {
+  color: #f84545;
+}
+.header_item_link:active {
+  color: #f789;
+}
+.header_item_link:focus {
+  color: #f844;
+}
+
+.header__info {
+  margin-top: 16.7%;
+  margin-bottom: 16.7%;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 36px;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header__text {
+  margin: 0;
+  text-align: center;
+}
+
+.header__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: 12px;
+  color: #f84545;
+  transition-duration: 500ms;
+  transition-property: letter-spacing;
+}
+.header__link:hover {
+  letter-spacing: 15px;
+}
+
+.header__btn {
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 84px;
+  height: 42px;
+  text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+  .header__title {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 18px;
+  }
+
+  .navigation__item {
+    margin-right: 30px;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: 980px) {
+  .navigation__item {
+    margin-right: 25px;
+    letter-spacing: 1px;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 760px) {
+  .header-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .navigation {
+    margin-left: 0;
+  }
+
+  .navigation_list {
+    justify-content: center;
+  }
+}
+@media (max-width: 580px) {
+  .header__title {
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 10px;
+  }
+
+  .navigation__item {
+    margin-right: 20px;
+    letter-spacing: 1px;
+    margin-right: 15px;
+  }
+
+  .header__link {
+    font-size: 18px;
+    line-height: 60px;
+    letter-spacing: 9px;
+  }
+  .header__link:hover {
+    letter-spacing: 9px;
+  }
+}
+/*-----------------------КОНТЕНТ-----------------------*/
+/*-----------------------ПОДВАЛ-----------------------*/

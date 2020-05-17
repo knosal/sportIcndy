@@ -1,0 +1,12 @@
+*.txt
+Thembs.db
+.DS_Store
+
+#Logs
+*.log
+
+*.fig
+*.config
+
+/#sourse/*
+stylesheet.css
