@@ -419,7 +419,7 @@ h2, p, ul {
 }
 /*----------------------INSTAGRAM---------------------*/
 .instagram {
-  background-image: url("../../img/insta/Layer-instargam.png");
+  background-image: url("../img/insta/Layer-instargam.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -571,13 +571,13 @@ h2, p, ul {
   opacity: 0.5;
 }
 .footer__menu_list--right .insta {
-  background: url("../../img/svg/IG.png") no-repeat center;
+  background: url("../img/svg/IG.png") no-repeat center;
 }
 .footer__menu_list--right .facebook {
-  background: url("../../img/svg/FB.png") no-repeat center;
+  background: url("../img/svg/FB.png") no-repeat center;
 }
 .footer__menu_list--right .twitter {
-  background: url("../../img/svg/TWTR.png") no-repeat center;
+  background: url("../img/svg/TWTR.png") no-repeat center;
 }
 
 @media (max-width: 780px) {
